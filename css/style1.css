@@ -99,6 +99,7 @@ section {
 .landmarks img {
     max-width: 100%;
 }
+
 .landmarks .row {
     display: grid;
     grid-gap: 10px;
@@ -131,8 +132,7 @@ section {
 
     animation: example 2s infinite linear;
 }
-
-/* animation */
+/* travel and recipe animation */
 @keyframes example {
     0% {background-color: #062f44;}
     20% {background:#e17373;} 
@@ -140,8 +140,10 @@ section {
     60% {background:#5f63e8;} 
     60% {background:#d222c0;} 
     100%{background-color:#fc036b}
-}
-/* animation */
+    }
+    /* animation */
+
+
 
 .links a:hover {
     text-decoration: underline;
@@ -387,8 +389,7 @@ figcaption {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
-/* animation */
+/* pet animation */
 @keyframes color {
     from {color: #62b7e1;}
     to {color: #fc036b8b;}
@@ -398,7 +399,7 @@ figcaption {
 
 
 .content-col h3 {
-    font-size: 5vmin;
+    font-size: 6vmin;
     color: #49497e;
     margin: 20px;
     text-align: center;
@@ -420,10 +421,14 @@ figcaption {
 
 
 
+
 /* reduced motion */
-@media screen and (prefers-reduced-motion: reduce){
-    .landmarks img[src$=".gif"] {
-        animation-play-state: paused;
+@media (prefers-reduced-motion: reduce){
+    .first .food_links a, .links a {
+        animation: none;
+    }
+    .pet-title h2 {
+        animation: none;
     }
 }
 

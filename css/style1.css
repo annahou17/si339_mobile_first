@@ -10,6 +10,9 @@
     position: static;
     top: 0px;
 }
+* {
+    font-family: 'Roboto';
+}
 
 
 
@@ -30,6 +33,7 @@
     margin: 30px auto;
     background-color: #f00f0f00;
     text-transform: uppercase;
+    background-color: #666;
 
 }
 
@@ -423,11 +427,14 @@ figcaption {
 
 
 /* reduced motion */
-@media (prefers-reduced-motion: reduce){
+@media screen and (prefers-reduced-motion: reduce){
     .first .food_links a, .links a {
         animation: none;
     }
     .pet-title h2 {
+        animation: none;
+    }
+    .animated-gif {
         animation: none;
     }
 }
@@ -435,7 +442,6 @@ figcaption {
 
 /* media query for tablet */
 @media only screen and (min-width: 600px) {
-
 }
 /* media query for desktop */
 @media only screen and (min-width: 768px) {

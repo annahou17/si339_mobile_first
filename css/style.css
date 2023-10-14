@@ -1,0 +1,473 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* navbar */
+.navbar {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    background-color: #666;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+
+header {
+    width: 100vw;
+    height: 50vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/clouds.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; 
+}
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2 {
+    font-size: 4vmin;
+    
+}
+
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.pictures .line{
+    width: 350px;
+    background: #fc036b;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+#skip:focus {
+    position: static;
+    top: 0px;
+}
+
+
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title h2{
+    text-align: center;
+    font-size: 7vmin;
+    color: #49497e;
+}
+.title h3{
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+    margin: 20px;
+}
+.pictures h4{
+    text-align: center;
+    font-size: 5vmin;
+    color: #49497e;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landmarks .row {
+    margin-top: 50px;
+}
+.landmarks p {
+    color: #484872;
+    padding: 0px 40px;
+}
+.row .col p{
+    text-indent: 40px;
+}
+
+/* links below the paragraphs */
+.links {
+    margin-top: 20px;
+}
+.links a {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #1C5673;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.links a:hover {
+    background-color: #062f44;
+}
+
+/* photo gallery */
+.pictures .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.image-gallery figure {
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative; 
+    margin: 10px;
+}
+figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 3px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Pets Photo Gallery headers and captions */
+.content-col h1 {
+    font-size: 7vmin;
+    color: #484872;
+} 
+.content-col h3 {
+    font-size: 5vmin;
+    color: #484872;
+}
+.likes {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #484872;;
+    padding: 0px 40px;
+
+}
+
+
+.first h2 {
+    text-align: center;
+    font-size: 5vmin;
+    color: #49497e;
+    margin: 20px;
+}
+.first h3 {
+    text-align: center;
+    font-size: 3vmin;
+    color: #49497e;
+    margin: 20px;
+}
+.first h4{
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+    margin: 20px;
+}
+
+.first .food_links {
+    margin-top: 10px;
+    text-align: center;
+}
+.first .food_links a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #1C5673;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 25px auto;
+}
+.first .food_links a:hover {
+    text-decoration: underline;
+}
+
+
+
+  /* Style the recipe description */
+.first .row p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 10px;
+    color: #333;
+    padding: 0px 40px;
+    text-align: center;
+}
+
+
+/* Style the recipe ingredients */
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.middle .recipe-ingredients {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 800px; 
+}
+.middle .col {
+    flex: 1; /*makes sure that the recipe ingredients are the same size*/
+    margin: 5px; 
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+}
+
+
+
+/* Recipe Steps */
+.recipe-information {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.first ol {
+    list-style-type: decimal; /* Use decimal numbers as list markers */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding: 0px 40px;
+    text-align: left; 
+}
+.first ol li {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+
+  /* Style the food pictures */
+.first .food_pictures .row5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first .food_pictures figure {
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative; 
+    margin: 10px;
+    margin-top: 20px;
+}
+
+/* travel page special */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/france_background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col_2 {
+    flex-basis: 50%;
+    text-align: center;
+}
+.container h4 {
+    color: #fff;
+    font-size: 75px;
+}
+.card {
+    width: 200px;
+    height:230px;
+    display:inline-block;
+    border-radius: 10px;
+    padding:15px;
+    box-sizing:border-box;
+    cursor:pointer;
+    margin:10px 15px;
+
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1 {
+    background-image: url(../images/nice_france_streets.webp);
+}
+.card2 {
+    background-image: url(../images/nice_france_beach.webp);
+}
+.card3 {
+    background-image: url(../images/nice_france_people.jpeg);
+}
+.card4 {
+    background-image: url(../images/nice_france_sunset.jpeg);
+}
+.card5 {
+    background-image: url(../images/nice_france_shops.avif);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+.container h5 {
+    color: #666;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+.card p {
+    color: #444;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .navbar {
+        padding: 0;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+
+    /* Famous Landmarks Section */
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
+    }
+    .pictures .col {
+        width: 100%;
+    }
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery figure {
+        width: 90%;
+    }
+
+
+    /* paragraphs in landmarks section */
+    section {
+        width: 90%;
+        margin: 40px auto;
+    }
+    
+    .row .col p {
+        font-size: 4vmin;
+        padding: 0px 10px;
+    }
+    .row .col .links {
+        margin-top: 50px;
+    }
+    .links {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .links a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        font-size: 4vmin;
+    }
+
+
+    /* views in the canyon section */
+    .content-col .line {
+        margin: 10px auto;
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 90%;
+    }
+    .image-gallery figcaption {
+        font-size: 3.2vmin;
+    }
+
+
+
+    /* nice france responsivness */
+    .container {
+        height: auto;
+    }
+    .row_2 {
+        flex-direction: column;
+    }
+    .col_2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .container h1 {
+        font-size: 36px;
+    }
+    .contianer h5 .card p {
+        font-size: 14px;
+    }
+}
+

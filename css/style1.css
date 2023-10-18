@@ -135,11 +135,7 @@ section {
 }
 /* travel and recipe animation */
 @keyframes example {
-    0% {background-color: #062f44;}
-    20% {background:#e17373;} 
-    40% {background:#8fc171;} 
-    60% {background:#5f63e8;} 
-    60% {background:#d222c0;} 
+    0% {background-color: #1C5673;}
     100%{background-color:#fc036b}
     }
     /* animation */

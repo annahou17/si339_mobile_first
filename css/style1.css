@@ -14,12 +14,10 @@
     font-family: 'Roboto';
 }
 
-
-
 .navbar {
     padding: 0;
-
 }
+
 .nav-links {
     display: flex;
     width: 100%;
@@ -99,15 +97,14 @@ section {
     margin: 20px;
 }
 
-
 .landmarks img {
     max-width: 100%;
 }
 
 .landmarks .row {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
+    height: 250px;
+    display: flex;
+    justify-content: center;
 }
 
 .landmarks p {
@@ -165,18 +162,28 @@ section {
     margin-bottom: 50px;
 }
 
-.image-gallery figure {
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 5px;
-    position: relative; 
-    margin: 10px;
+/* grid for tablet and desktop view */
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
 }
+/* grid for tablet and desktop view */
+
+.image-gallery figure {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-gallery img {
+    width: 60%;
+    height: 200px;
+    border: solid #1C5673;
+}
+
 figcaption {
     font-size: 20px;
     color: #666;
     margin-top: 3px;
-    /* text-align: center; */
     padding: 10px;
 }
 
@@ -265,6 +272,9 @@ figcaption {
     margin: 20px;
 }
 
+.first img {
+    max-width: 80%;
+}
 .first .row {
     display: flex;
     justify-content: center;
@@ -290,8 +300,6 @@ figcaption {
     animation: example 2s infinite linear;
     /* animation */
 }
-
-
 
 .first .food_links a:hover {
     text-decoration: underline;
@@ -330,6 +338,7 @@ figcaption {
     text-align: center; 
 }
 
+/* recipe steps */
 .recipe-information {
     max-width: 800px;
     margin: 20px auto;
@@ -359,15 +368,19 @@ figcaption {
     text-align: center;
     margin-bottom: 10px;
     position: relative; 
-    margin: 10px;
+    margin: 20px;
     margin-top: 20px;
+}
+.first .food_pictures img {
+    border: solid #fc036b;
 }
 
 /* pets page */
 .pet-main h3 {
-    color: #484872;
+    color: #0f5e9b;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 .pet-main p {
@@ -379,6 +392,7 @@ figcaption {
 }
 
 .pet-main .row {
+    max-height: 550px;
     display: flex;
     justify-content: center;
 }
@@ -423,7 +437,10 @@ figcaption {
     text-indent: 40px;
 }
 
-
+/* travel page - gif and static picture */
+.static{
+    display: none;
+}
 
 
 /* reduced motion */
@@ -434,8 +451,11 @@ figcaption {
     .pet-title h2 {
         animation: none;
     }
-    .animated-gif {
-        animation: none;
+    .static {
+        display: block;
+    }
+    .gif {
+        display: none;
     }
 }
 
